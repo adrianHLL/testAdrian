@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestAdrianHenriquez</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body> 
+    
+   <div class="text">
+    
+    <p>🙋‍♂️NOMBRE DE USUARIO:</p><br>
+ 
+    <div class="global-usu">
+    <span id="usuario2">
+       <input type="text" id="usuario" placeholder="➡➡➡DIGITE SU NOMBRE AQUI⬅⬅⬅">
+    </span>
+</div>
+      </div>   
+          <div class="inicio-global cuadro-inicio ">
+        <h3>INSTRUCCIONES👇👇👇 <br><br> ⭐¡responde cada unas de las preguntas y al final veras el resultado!⭐</h3><br>
+        
+        <p>total de preguntas: <span class="total-preguntas">➡5⬅</span></p><br>EMPEZEMOS⬇⬇<br>
+      
+        <button type="button" class="btn" id="btnLogin" onclick="comenzarTest()" >Iniciar Preguntas</button>
+    </div>
+
+<div class="preguntas-global  cuadro-inicio esconder ">
+    <div class="numero-preguntas">
+       
+    </div>
+
+    <div class="texto-preguntas">
+        
+    </div>
+
+    <div class="opciones-contenedor">
+      
+    </div>
+
+    <div class="siguientebtn">
+        <button type="button" class="btn " onclick="next()">siguiente</button>
+    </div>
+    <div class="indicardor-respuesta esconder">
+     
+
+    </div>
+</div>
+
+
+<div class="resultado-global cuadro-inicio esconder">
+    <h1>🤔RESULTADO DEL TEST🤔</h1>
+    <table>
+        <tr>
+            <td>TOTAL DE PREGUNTAS</td>
+            <td><span class="total-preguntas"></span></td>
+        </tr>
+      
+
+        <tr>
+            <td>RESPUESTAS CORRECTAS</td>
+            <td><span class="total-correctas"></span></td>
+        </tr>
+        <tr>
+            <td>RESPUESTAS INCORRECTAS</td>
+            <td><span class="total-incorrectas"></span></td>
+        </tr>
+        
+        <tr>
+            <td>PUNTAJE</td>
+            <td><span class="total-puntaje"></span></td>
+        </tr>
+    <tr>
+            <td>OBSERVACION</td>
+            <td><span class="total-observacion"></span></td>
+        </tr>
+        
+
+    </table>
+
+    <button type="button" class="btn" onclick="bthome()" onclick="location.reload()">inicio</button>
+</div>
+<script src="js/preguntas.js"></script>
+<script src="js/aplicacion.js"></script>
+</body>
+</html>

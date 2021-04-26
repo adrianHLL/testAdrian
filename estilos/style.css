@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+
+body{
+ background-color: rgb(247, 146, 121);
+font-size: 16px;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+.cuadro-inicio{
+    max-width: 700px;
+    background-color:#ffffff;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    
+
+}
+.cuadro-inicio::before,
+.cuadro-inicio::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.cuadro-inicio.esconder{
+display: none;
+}
+
+.inicio-global h3{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.inicio-global p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+    color: black;
+    font-weight: 400;
+
+}
+
+.inicio-global p span{
+    font-weight: 500;
+}
+.inicio-global .btn{
+    margin-top: 20px;
+}
+.btn{
+    padding: 15px 45px;
+    background-color: #3c48f0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.preguntas-global .numero-preguntas,
+.preguntas-global .texto-preguntas,
+.preguntas-global .opciones-contenedor,
+.preguntas-global .siguientebtn, 
+.preguntas-global .indicardor-respuesta{
+    width: 100%;
+    float: left;
+}
+
+.preguntas-global .numero-preguntas{
+    font-size: 18px;
+    color: #4c1ef1;
+    font-weight: 600;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 10px;
+    line-height: 25px;
+
+}
+ 
+.preguntas-global .texto-preguntas{
+    font-size: 22px;
+    color: black;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.preguntas-global .opciones-contenedor .opciones{
+     background-color: #c7c4c4;
+     padding: 15px;
+     font-size: 16px;
+     line-height: 22px;
+     color:black;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     cursor: pointer;
+    text-transform: capitalize;
+    animation: fadeIn 0.3s ease forwards;
+    position: relative;
+    overflow: hidden;
+
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.preguntas-global .opciones-contenedor .opciones.ya-respondio{
+    pointer-events: none;
+}
+.preguntas-global .opciones-contenedor .opciones.correcto::before{
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: green;
+z-index: -1;
+}
+.preguntas-global .opciones-contenedor .opciones.incorrecto::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:red;
+    z-index: -1;
+    }
+.preguntas-global .opciones-contenedor .opciones.correcto{
+    color: white;
+}
+.preguntas-global .opciones-contenedor .opciones.incorrecto{
+    color: white;
+}
+
+.preguntas-global .btn{
+    margin: 17px 0;
+
+
+}
+.preguntas-global .indicardor-respuesta{
+    border-top: 1px solid #cccccc;
+}
+
+.preguntas-global .indicardor-respuesta div{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-color: #cccccc;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top:15px;
+     
+
+}
+.preguntas-global .indicardor-respuesta div.correcto{
+background-color: green;
+}
+.preguntas-global .indicardor-respuesta div.incorrecto{
+background-color: red;
+}
+
+.resultado-global{
+    text-align: center;
+}
+.resultado-global h1{
+font-size: 38px;
+color: black;
+line-height: 40px;
+
+}
+
+.resultado-global table{
+width: 90%;
+border-collapse: collapse;
+margin: 30px;
+
+}
+.resultado-global table td{
+    border: 3px solid rgb(53, 15, 226);
+    padding: 8px 15px;
+}
+
+
+
+
+.global-usu input{
+   background-color: rgb(183, 244, 247);
+   margin-left: 220px;
+   padding: 10px;
+   width: 400px;
+   border-radius: 10px;
+   float: left;
+    position: relative;
+    margin-top: -47px;
+    
+   
+}
+.text{
+    margin-left: 320px ;
+    margin-right:320px ;
+margin-top: 20px;
+background-color: white;
+border-radius: 100px;
+padding: 40px;
+
+
+}
